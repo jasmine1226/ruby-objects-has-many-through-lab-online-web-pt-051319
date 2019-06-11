@@ -21,6 +21,7 @@ class  Doctor
   def patients
     patients = []
     self.appointments.each do |appointment|
+      puts appointment
       patients << appointment.patient
     end
     patients
