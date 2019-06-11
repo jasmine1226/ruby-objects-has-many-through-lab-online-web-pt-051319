@@ -18,4 +18,12 @@ class Patient
     appointment
   end
 
+  def doctors
+    doctors = []
+    self.appointments.each do |appointment|
+      doctors << appointment.doctor
+    end
+    doctors
+  end
+
 end
